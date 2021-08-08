@@ -30,17 +30,20 @@
     shift
     
   >
-    <v-btn>
+  
+    <v-btn to="/" >
       <span>Partidas</span>
 
       <v-icon>mdi-gamepad-square</v-icon>
     </v-btn>
-
-    <v-btn>
+  
+  
+    <v-btn to="/about">
       <span>Adversarios</span>
 
       <v-icon>mdi-account-supervisor-circle</v-icon>
-    </v-btn>    
+    </v-btn> 
+  
   </v-bottom-navigation>
   </v-app>
 </template>
