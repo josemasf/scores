@@ -6,19 +6,18 @@
       dark
     >
       <div class="d-flex align-center">
-        
+        <v-img
+          :src="require('./assets/girl.svg')"          
+          contain
+          height="50"
+        />
+        Julititi´s scores       
+          
       </div>
 
       <v-spacer></v-spacer>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+      
     </v-app-bar>
 
     <v-main>
@@ -29,30 +28,19 @@
     :background-color="color"
     dark
     shift
+    
   >
     <v-btn>
-      <span>Video</span>
+      <span>Partidas</span>
 
-      <v-icon>mdi-television-play</v-icon>
+      <v-icon>mdi-gamepad-square</v-icon>
     </v-btn>
 
     <v-btn>
-      <span>Music</span>
+      <span>Adversarios</span>
 
-      <v-icon>mdi-music-note</v-icon>
-    </v-btn>
-
-    <v-btn>
-      <span>Book</span>
-
-      <v-icon>mdi-book</v-icon>
-    </v-btn>
-
-    <v-btn>
-      <span>Image</span>
-
-      <v-icon>mdi-image</v-icon>
-    </v-btn>
+      <v-icon>mdi-account-supervisor-circle</v-icon>
+    </v-btn>    
   </v-bottom-navigation>
   </v-app>
 </template>
