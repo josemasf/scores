@@ -45,13 +45,13 @@
       >
         <v-card>
           <v-card-title>
-            Dialog 2
+            Nuevo juego
           </v-card-title>
           <v-card-text>
             
             <v-select
               :items="select"
-              label="A Select List"
+              label="Lista de juegos"
               item-value="text"
             ></v-select>            
             <v-btn v-for="(player, index) in playerInGame" :key="player" @click="deletePlayer(index)">{{player}}</v-btn>
@@ -61,7 +61,7 @@
             cols="12"            
           >
             <v-text-field
-              label="Solo"
+              label="Nombre del jugador"
               placeholder="Placeholder"
               solo
               aria-autocomplete="false"
@@ -75,7 +75,16 @@
               text
               @click="dialog = false"
             >
-              Close
+              Cerrar
+            </v-btn>
+            <v-spacer />
+            <v-btn
+              color="primary"
+              
+              dark
+              @click="dialog = false"
+            >
+              Guardar
             </v-btn>
           </v-card-actions>
         </v-card>
