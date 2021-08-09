@@ -38,7 +38,7 @@
     </v-btn>
   
   
-    <v-btn to="/about">
+    <v-btn to="/adversaries">
       <span>Adversarios</span>
 
       <v-icon>mdi-account-supervisor-circle</v-icon>
